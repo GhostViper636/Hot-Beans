@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html Lang="en">
+<head>
+	<meta charset=utf-8>
+	<meta name+"viewport" content=width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<style type="text/css">
+	body {
+	background-image: url(wood.jpg);
+}
+    </style>
+</head>
+<body>
+
+
+
+
+<table width="100%" border="1">
+  <tr>
+    <th scope="row"><img src="TITLE.gif" alt="image missing" width="700" height="300" /></th>
+  </tr>
+  <tr>
+    <th scope="row"><a href="home.html"><img src="button home.fw.png" alt="image missing" width="150" height="50"></a><a href="staff.html"><img src="button staff.fw.png" alt="image missing" width="120" height="50"></a><a href="requirements.html"><img src="button requirements.fw.png" alt="image missing" width="320" height="50"></a><a href="courses.html"><img src="button courses.fw.png" alt="image missing" width="180" height="50"></a><a href="index.html"><img src="button apply.fw.png" alt="image missing" width="150" height="50"></a><a href="contacts.html"><img src="button contacts.fw.png" alt="image missing" width="200" height="50"></a><a href="Availabilities.html"><img src="button availabilities.fw.png" alt="image missing" width="300" height="50"></a></th>
+  </tr>
+  <tr>
+    <th scope="row"><section class="form-container">
+      <form action="/" method="GET" autocomplete="off">
+        <p>Please fill in the following page to apply for the role you have selected:</p>
+        <p>
+          <!--text 
+        	<input type="text" name="text-input	" 				            placeholder="text" required minLength=                        "2" maxlength="10" pattern="[a-zA-Z]+$"            title="Invalid Format. Letters only."> -->
+          <!-- first name -->
+          Name:
+          <input type="text" name="Full name"
+            placeholder="Full name" required                         minLength="2">
+        </p>
+        <p><br>
+          <!-- email -->
+          Email Address:
+          <input type="email" name="email"
+            placeholder="email" required>
+          <br>
+          <!-- home address -->
+        </p>
+        <p>Home Address:
+          <input type="text" name="Address"
+             placeholder="Address" required>
+          <!-- phone number -->
+        </p>
+        <p>Phone Number:
+          <input type="text" name="Phone Number"
+            placeholder="Phone Number" required>
+        </p>
+        <p>Job Role: 
+          <label for="select"></label>
+          <select name="select" id="select">
+            <option>Web Designer</option>
+            <option>Web Developer</option>
+            <option>Web Maintanence</option>
+          </select>          
+          <!-- radio -->
+        </p>
+        <p>Gender</p>
+        <p>
+          <input type="radio" name="radio" value="1">
+          <label>Male</label>
+          <br>
+          <input type="radio" name="radio" value="2"
+            required>
+          <label>Female</label>
+          <br>
+          <input type="radio" name="radio" value="3"
+            required>
+          <label>Other</label>
+        </p>
+        <p><br>
+          <!-- date -->
+          Date of Birth:
+          <input type="date" name="date" 
+            min="1900-01-01" max=2023-07-21"
+            placeholder="date">
+        </p>
+        <p><br>
+          <!-- file -->
+          Please upload your CV here:
+          <input type="file" name="file" accept="image/*"
+            placeholder="upload cv" required>
+        </p>
+        <p>
+          <input class="submit" type="submit" value="Submit">
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </form>
+    </section></th>
+  </tr>
+</table>
+<script src="index.js"></script>
+    
+</body>
+</html>
